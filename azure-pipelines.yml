@@ -33,4 +33,9 @@ jobs:
           echo Starting the build
           mvn package
         displayName: 'Build with Maven'
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
   
