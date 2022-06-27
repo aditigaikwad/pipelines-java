@@ -34,7 +34,7 @@ jobs:
           mvn package
         displayName: 'Build with Maven'
   
-  - job: Upload jar
+  - job: Uploadjar
     steps:
     - task: PublishBuildArtifacts@1
       inputs:
