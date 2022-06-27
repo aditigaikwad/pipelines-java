@@ -12,7 +12,7 @@ pool:
 
 
 
-#jobs:
+jobs:
  # - job: Build
  #   steps:
  #   - task: Maven@3
